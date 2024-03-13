@@ -1,0 +1,47 @@
+  .login-container, .home-container {
+      background: url('../../images/authenticationBg.png') center center no-repeat fixed;
+      background-size: cover;
+  }
+  .main-container {
+    height : 86vh;
+  }
+  .home-banner  {
+      padding: 20px;
+      height: 86vh;
+      display: flex;
+      justify-content:space-evenly !important;
+      align-items: center;
+      flex-wrap: wrap;
+      @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+        margin: auto;
+        height: 86vh;
+      }
+      .profile-content {
+        margin: 20px;
+      }
+      .shadow{
+        background-color: $white-color;
+        margin:20px;
+        padding: 20px;
+      }
+      h1{
+        @media screen and (min-width: 992px) {
+          font-size: 3.8rem !important;
+        }
+      }
+      h3 {
+        color: $secondary-color;
+        @media screen and (min-width: 992px) {
+          font-size: 25px;
+    }
+    }
+    h2 {
+      padding: 2rem;
+      margin: 1rem;
+      @media screen and (min-width: 992px) {
+          padding: 3rem;
+          font-size: 25px;
+      }
+    }
+}

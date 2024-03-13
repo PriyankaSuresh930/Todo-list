@@ -1,0 +1,84 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap");
+
+// Start : Includes 
+//======================================//
+@import "./includes/variables";
+@import "./includes/main";
+// End : Includes 
+//======================================//
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: $white-color;
+    font-family: "Rubik", sans-serif;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+.text-pink {
+    color: $primary-color;
+}
+.btn-pink {
+    color: $white-color !important;
+    background-color: $primary-color !important;
+    &.btn-pink:hover {
+        color: $white-color !important;
+        background-color: $ternary-color !important;
+      }
+}
+textarea:focus, input:focus{
+    outline: none !important;
+}
+a{
+    &:hover, &:active {
+      color: $primary-color !important;
+    }
+}
+.home-quotes {
+    background-color: $light-pink;
+    border-left: 10px solid $ternary-color !important;
+    border: 2px solid $ternary-color;
+    p{
+        word-spacing: 1px;
+        text-align: justify;
+        text-justify: inter-word;
+        padding-right: 20px;
+    }
+}
+.danger {
+    background-color: $primary-red;
+    text-align: center;
+    color: $white-color;
+    padding: 4px 16px;
+    border-radius: 5px;
+    font-size: 13px;
+    &:hover {
+        background-color: $secondary-red;
+    }
+}
+.success {
+    background-color: $primary-green;
+    text-align: center;
+    color: $white-color;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 13px;
+    &:hover{
+        background-color: $secondary-green;
+    }
+}
+.copyright {
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+}
+button {
+    border:none !important;
+    outline: none !important;
+}
